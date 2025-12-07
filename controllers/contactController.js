@@ -1,5 +1,6 @@
 import nodemailer from "nodemailer";
-
+import dotenv from "dotenv";
+dotenv.config();
 export const sendContactMail = async (req, res) => {
   try {
     const { reason, name, phone, email, message } = req.body;
